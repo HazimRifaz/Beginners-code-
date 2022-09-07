@@ -1,0 +1,6 @@
+x = int(input("Enter side"))
+while x <= 0 
+    print (" ur wrong")
+    x = int(input("Enter side"))
+area = x*x
+print (area)

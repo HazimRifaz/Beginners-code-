@@ -1,0 +1,12 @@
+lst = [65, 12, 53, 75, 23, 74, 12, 89]
+highest = 0
+lowest = 100
+num = 0
+for num in range(8):
+    if num > highest:
+        highest = lst[num]
+    if num < lowest:
+        lowest = lst[num]
+
+print(highest)
+print(lowest)

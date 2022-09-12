@@ -1,0 +1,17 @@
+lst = []
+for num in range(8):
+    x = int(input("Enter a numbers from a 0 to a 100"))
+    while x > 100 or x < 0:
+        print("Incorrect value")
+        x = int(input("Enter a number between a 0 to a 100"))
+    lst.append(x)
+
+highest = 0
+lowest = 100
+for num in range(8):
+    if lst[num]>highest:
+        highest = lst[num]
+    if lst[num]<lowest:
+        lowest = lst[num]
+print("the highest value is", highest)
+print("the lowest value is", lowest)

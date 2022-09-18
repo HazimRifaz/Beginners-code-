@@ -1,0 +1,18 @@
+x = []
+biggest = 0
+lowest = 1000
+for index in range(0,5):
+    nums = int(input("Enter number"))
+    while nums >= 1000:
+        nums = input("enter a number below 1000")
+    x.append(nums)
+for index in range(0,5):
+    if x[index] > biggest:
+        biggest = x[index]
+    if x[index] < lowest:
+        lowest = x[index]
+
+range = biggest - lowest
+print (biggest)
+print (lowest)
+print (range)
